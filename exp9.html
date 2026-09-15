@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Lab 9 - Responsive Image Grid (Bootstrap 5)</title> 
+<link rel="stylesheet" href="vendor/bootstrap.min.css"> 
+<style> 
+  body { background: #f8f9fa; padding: 30px 0; } 
+  .gallery-title { text-align: center; margin-bottom: 30px; color: #2c3e50; } 
+  .grid-item { 
+    background: #dfe6e9; 
+    height: 180px; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+    color: #636e72; 
+    overflow: hidden; 
+    position: relative; 
+  } 
+  .grid-item .caption { 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    background: rgba(0,0,0,0.55); 
+    color: white; 
+    text-align: center; 
+    padding: 6px 0; 
+    font-size: 14px; 
+  } 
+  .g1 { background: linear-gradient(135deg,#ff9a9e,#fecfef); } 
+  .g2 { background: linear-gradient(135deg,#a1c4fd,#c2e9fb); } 
+  .g3 { background: linear-gradient(135deg,#fbc2eb,#a6c1ee); }  
+  .g4 { background: linear-gradient(135deg,#fddb92,#d1fdff); } 
+  .g5 { background: linear-gradient(135deg,#84fab0,#8fd3f4); } 
+  .g6 { background: linear-gradient(135deg,#f6d365,#fda085); } 
+</style> 
+</head> 
+<body> 
+<div class="container"> 
+  <h1 class="gallery-title">Nature Photo Gallery</h1> 
+  <div class="row g-3"> 
+    <div class="col-6 col-md-4"> 
+      <div class="grid-item g1">      <div class="caption">Mountains</div></div> 
+    </div> 
+    <div class="col-6 col-md-4"> 
+      <div class="grid-item g2">       <div class="caption">Ocean</div></div> 
+    </div> 
+    <div class="col-6 col-md-4"> 
+      <div class="grid-item g3">  <div class="caption">Forest</div></div> 
+    </div> 
+    <div class="col-6 col-md-4"> 
+      <div class="grid-item g4">      <div class="caption">Sunrise</div></div> 
+    </div> 
+    <div class="col-6 col-md-4"> 
+      <div class="grid-item g5">       <div class="caption">Valley</div></div> 
+    </div> 
+    <div class="col-6 col-md-4"> 
+      <div class="grid-item g6">                 <div class="caption">Desert</div></div> 
+    </div> 
+  </div> 
+</div> 
+</body> 
+</html> 
